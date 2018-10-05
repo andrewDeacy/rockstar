@@ -1,0 +1,11 @@
+#!/Users/qxv9345/Desktop/development/Rockstar/venv/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from rockstar import cli
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
